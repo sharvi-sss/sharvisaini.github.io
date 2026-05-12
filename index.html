@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sharvi Saini's futuristic portfolio for computer science, robotics, STEM education, research, and innovation.">
+  <title>Sharvi Saini | Robotics & Computer Science Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;600;700&family=Orbitron:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="90" tabindex="0">
+  <canvas id="starfield" aria-hidden="true"></canvas>
+
+  <nav id="mainNav" class="navbar navbar-expand-lg navbar-dark fixed-top cyber-nav">
+    <div class="container">
+      <a class="navbar-brand logo-mark" href="#home">&lt; Sharvi /&gt;</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarLinks" aria-controls="navbarLinks" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarLinks">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section id="home" class="hero-section section-pad d-flex align-items-center">
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="floating-shape shape-one"><i class="fa-solid fa-robot"></i></div>
+      <div class="floating-shape shape-two"><i class="fa-solid fa-microchip"></i></div>
+      <div class="floating-shape shape-three"><i class="fa-solid fa-atom"></i></div>
+      <div class="floating-shape shape-four"><i class="fa-solid fa-satellite-dish"></i></div>
+      <div class="floating-shape shape-five"><i class="fa-solid fa-code"></i></div>
+      <div class="floating-shape shape-six"><i class="fa-solid fa-cubes"></i></div>
+      <div class="floating-shape shape-seven"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+      <div class="floating-shape shape-eight"><i class="fa-solid fa-network-wired"></i></div>
+
+      <div class="container position-relative">
+        <div class="row justify-content-center text-center">
+          <div class="col-lg-9 col-xl-8 reveal">
+            <div class="profile-ring mx-auto mb-4">
+              <img src="profile.jpg" onerror="this.onerror=null; this.src='profile-fallback.svg';" alt="Sharvi Saini profile portrait" class="profile-img">
+            </div>
+            <p class="eyebrow mb-3">Mission Control Online</p>
+            <h1 class="hero-title glitch" data-text="Hi, I'm Sharvi">Hi, I'm Sharvi</h1>
+            <p class="hero-subtitle mt-3">
+              <span id="typewriter" aria-live="polite"></span><span class="cursor">|</span>
+            </p>
+            <div class="d-flex flex-column flex-sm-row justify-content-center gap-3 mt-5">
+              <a href="resume.pdf" class="btn btn-neon-green" download>
+                <i class="fa-solid fa-file-arrow-down me-2"></i>Download Resume
+              </a>
+              <a href="#projects" class="btn btn-purple">
+                <i class="fa-solid fa-rocket me-2"></i>View Projects
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section-pad">
+      <div class="container">
+        <div class="section-shell reveal">
+          <div class="row align-items-center g-5">
+            <div class="col-lg-5">
+              <div class="tech-frame">
+                <img src="profile.jpg" onerror="this.onerror=null; this.src='profile-fallback.svg';" alt="Sharvi Saini in a futuristic tech frame" class="img-fluid">
+              </div>
+            </div>
+            <div class="col-lg-7">
+              <p class="eyebrow">About The Builder</p>
+              <h2 class="section-title">Teaching, Coding, And Building Robots</h2>
+              <p class="lead bio-copy">
+                Sharvi Saini is a Computer Science student at Toronto Metropolitan University, Research Assistant at CIRCLE Lab, Project Officer at Frontier, and Lead Instructor at Young Engineers. She brings together programming, robotics, STEM instruction, data analysis, and beginner-friendly technical education to turn complex ideas into clear learning experiences and practical builds.
+              </p>
+
+              <div class="row g-3 mt-4">
+                <div class="col-6 col-md-4">
+                  <div class="stat-card">
+                    <span class="stat-number" data-count="9">0</span>
+                    <span class="stat-label">Projects & Builds</span>
+                  </div>
+                </div>
+                <div class="col-6 col-md-4">
+                  <div class="stat-card">
+                    <span class="stat-number" data-count="12">0</span>
+                    <span class="stat-label">Programming Tools</span>
+                  </div>
+                </div>
+                <div class="col-12 col-md-4">
+                  <div class="stat-card">
+                    <span class="stat-number" data-count="2">0</span>
+                    <span class="stat-label">Robotics Competitions</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="resume-highlights mt-4">
+                <div>
+                  <strong>Lead Instructor</strong>
+                  <span>Young Engineers, hands-on robotics and STEM instruction for students aged 5-13.</span>
+                </div>
+                <div>
+                  <strong>Temporary Assistant</strong>
+                  <span>Toronto Metropolitan University, Python course design plus data cleaning and analysis.</span>
+                </div>
+                <div>
+                  <strong>Project Officer</strong>
+                  <span>Frontier Student Space Society, beginner-friendly robotics workshops and demos.</span>
+                </div>
+                <div>
+                  <strong>Research Assistant</strong>
+                  <span>CIRCLE Lab, data collection, cleaning, analysis, and collaborative research support.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section-pad">
+      <div class="container">
+        <div class="text-center mb-5 reveal">
+          <p class="eyebrow">Systems Ready</p>
+          <h2 class="section-title">Tech Arsenal</h2>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-6 col-md-4 col-lg-3 reveal">
+            <div class="skill-card">
+              <i class="fa-brands fa-html5"></i>
+              <h3>HTML5</h3>
+              <div class="progress"><div class="progress-bar" style="width: 92%"></div></div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 reveal">
+            <div class="skill-card">
+              <i class="fa-brands fa-css3-alt"></i>
+              <h3>CSS3</h3>
+              <div class="progress"><div class="progress-bar cyan" style="width: 88%"></div></div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 reveal">
+            <div class="skill-card">
+              <i class="fa-brands fa-java"></i>
+              <h3>Java</h3>
+              <div class="progress"><div class="progress-bar purple" style="width: 84%"></div></div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 reveal">
+            <div class="skill-card">
+              <i class="fa-solid fa-code"></i>
+              <h3>C / C++</h3>
+              <div class="progress"><div class="progress-bar orange" style="width: 80%"></div></div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 reveal">
+            <div class="skill-card">
+              <i class="fa-brands fa-python"></i>
+              <h3>Python</h3>
+              <div class="skill-badge">Advanced</div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 reveal">
+            <div class="skill-card">
+              <i class="fa-brands fa-rust"></i>
+              <h3>Rust</h3>
+              <div class="skill-badge cyan-text">Exploring</div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 reveal">
+            <div class="skill-card">
+              <i class="fa-solid fa-robot"></i>
+              <h3>Robotics</h3>
+              <div class="skill-badge green-text">Explorer</div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 reveal">
+            <div class="skill-card">
+              <i class="fa-brands fa-wordpress"></i>
+              <h3>WordPress</h3>
+              <div class="skill-badge orange-text">Certified</div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 reveal">
+            <div class="skill-card">
+              <i class="fa-solid fa-microchip"></i>
+              <h3>Arduino</h3>
+              <div class="skill-badge green-text">Builder</div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 reveal">
+            <div class="skill-card">
+              <i class="fa-solid fa-people-group"></i>
+              <h3>Teamwork</h3>
+              <div class="skill-badge cyan-text">Leader</div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 reveal">
+            <div class="skill-card">
+              <i class="fa-solid fa-terminal"></i>
+              <h3>Smalltalk</h3>
+              <div class="skill-badge purple-text">Learning</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section-pad">
+      <div class="container">
+        <div class="text-center mb-5 reveal">
+          <p class="eyebrow">Archived Deployments</p>
+          <h2 class="section-title">Mission Logs</h2>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4 reveal">
+            <article class="project-card">
+              <img src="project1.jpg" alt="Robotics soccer car project thumbnail">
+              <div class="project-body">
+                <h3>Robotics Soccer Car</h3>
+                <p>Competed twice in the IBZ Premier League, assembling a soccer-playing robot with custom 3D-printed parts and optimized motor control.</p>
+                <div class="tag-row">
+                  <span>Robotics</span><span>3D Print</span><span>Testing</span>
+                </div>
+                <div class="d-flex gap-2 mt-4">
+                  <a href="#" class="btn btn-sm btn-project">View Live</a>
+                  <a href="#" class="btn btn-sm btn-project alt">GitHub</a>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4 reveal">
+            <article class="project-card">
+              <img src="project2.jpg" alt="Arduino line-following robot thumbnail">
+              <div class="project-body">
+                <h3>Arduino Line-Following Robot</h3>
+                <p>Built and programmed an autonomous robot using IR sensors, motor control logic, calibration, and embedded programming fundamentals.</p>
+                <div class="tag-row">
+                  <span>Arduino</span><span>Sensors</span><span>Motors</span>
+                </div>
+                <div class="d-flex gap-2 mt-4">
+                  <a href="#" class="btn btn-sm btn-project">View Live</a>
+                  <a href="#" class="btn btn-sm btn-project alt">GitHub</a>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4 reveal">
+            <article class="project-card">
+              <img src="project3.jpg" alt="Python course and web systems thumbnail">
+              <div class="project-body">
+                <h3>CPS000 Python Course</h3>
+                <p>Co-designed TMU's introductory Python prerequisite course with beginner-friendly lessons, demos, and hands-on exercises.</p>
+                <div class="tag-row">
+                  <span>Python</span><span>Teaching</span><span>TMU</span>
+                </div>
+                <div class="d-flex gap-2 mt-4">
+                  <a href="#" class="btn btn-sm btn-project">View Live</a>
+                  <a href="#" class="btn btn-sm btn-project alt">GitHub</a>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4 reveal">
+            <article class="project-card">
+              <img src="project4.jpg" alt="MARS rocket society project thumbnail">
+              <div class="project-body">
+                <h3>MARS Rocket Society</h3>
+                <p>Contributed as a competitor with the Metropolitan Aerospace Rocket Society, supporting mechanical and systems integration, testing, and troubleshooting.</p>
+                <div class="tag-row">
+                  <span>Rocketry</span><span>Systems</span><span>Testing</span>
+                </div>
+                <div class="d-flex gap-2 mt-4">
+                  <a href="#" class="btn btn-sm btn-project">View Live</a>
+                  <a href="#" class="btn btn-sm btn-project alt">GitHub</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="credentials" class="section-pad">
+      <div class="container">
+        <div class="text-center mb-5 reveal">
+          <p class="eyebrow">Signal Credentials</p>
+          <h2 class="section-title">Learning Orbit</h2>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3 reveal">
+            <div class="credential-card">
+              <i class="fa-solid fa-graduation-cap"></i>
+              <h3>TMU Computer Science</h3>
+              <p>Bachelor's studies at Toronto Metropolitan University, 2023-2027, after Delhi Public School in India.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 reveal">
+            <div class="credential-card">
+              <i class="fa-solid fa-award"></i>
+              <h3>Dean's List</h3>
+              <p>Academic recognition listed on Sharvi's LinkedIn profile.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 reveal">
+            <div class="credential-card">
+              <i class="fa-brands fa-wordpress"></i>
+              <h3>Certifications</h3>
+              <p>Software Engineering, Launchpad for Entrepreneurs, and WordPress website building.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 reveal">
+            <div class="credential-card">
+              <i class="fa-solid fa-language"></i>
+              <h3>Languages & Arts</h3>
+              <p>English, Hindi, elementary Sanskrit, and a Kathak Dance diploma from Saraswati Kala Kendra.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="resume" class="section-pad resume-band">
+      <div class="container text-center reveal">
+        <p class="eyebrow">Credentials Packet</p>
+        <h2 class="section-title">Download My Resume</h2>
+        <p class="resume-copy">Check out my full experience in computer science, robotics, STEM education, data work, and volunteer leadership.</p>
+        <a href="resume.pdf" class="btn btn-resume" download>
+          <i class="fa-solid fa-download me-2"></i>Download My Resume
+        </a>
+      </div>
+    </section>
+
+    <section id="contact" class="section-pad">
+      <div class="container">
+        <div class="text-center mb-5 reveal">
+          <p class="eyebrow">Signal Channel</p>
+          <h2 class="section-title">Establish Connection</h2>
+        </div>
+
+        <div class="row g-5 align-items-start">
+          <div class="col-lg-7 reveal">
+            <form class="contact-form">
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label for="name" class="form-label">Name</label>
+                  <input type="text" id="name" class="form-control" placeholder="Your name" required>
+                </div>
+                <div class="col-md-6">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="email" id="email" class="form-control" placeholder="you@example.com" required>
+                </div>
+                <div class="col-12">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea id="message" class="form-control" rows="6" placeholder="Transmit your message..." required></textarea>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-neon-green">
+                    <i class="fa-solid fa-paper-plane me-2"></i>Send Message
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <div class="col-lg-5 reveal">
+            <div class="contact-panel">
+              <div class="contact-line">
+                <i class="fa-solid fa-envelope"></i>
+                <span>sharvi741@gmail.com</span>
+              </div>
+              <div class="contact-line">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Toronto, ON</span>
+              </div>
+              <div class="social-row">
+                <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/sharvi-saini" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#" aria-label="Twitter X"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container text-center">
+      <p class="mb-0">&copy; 2025 Sharvi Saini. Built with <span class="purple-heart">♥</span> &amp; Code.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

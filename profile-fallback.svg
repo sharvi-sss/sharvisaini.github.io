@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" role="img" aria-labelledby="title desc">
+  <title id="title">Futuristic profile fallback</title>
+  <desc id="desc">A neon sci-fi profile avatar placeholder.</desc>
+  <defs>
+    <radialGradient id="space" cx="50%" cy="42%" r="62%">
+      <stop offset="0" stop-color="#142034"/>
+      <stop offset="0.45" stop-color="#080a16"/>
+      <stop offset="1" stop-color="#000000"/>
+    </radialGradient>
+    <linearGradient id="ring" x1="120" y1="120" x2="680" y2="680">
+      <stop offset="0" stop-color="#9B30FF"/>
+      <stop offset="0.5" stop-color="#00D4FF"/>
+      <stop offset="1" stop-color="#39FF14"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="800" height="800" fill="url(#space)"/>
+  <g opacity="0.18" stroke="#00D4FF" stroke-width="2">
+    <path d="M0 120h800M0 240h800M0 360h800M0 480h800M0 600h800M0 720h800"/>
+    <path d="M80 0v800M200 0v800M320 0v800M440 0v800M560 0v800M680 0v800"/>
+  </g>
+  <g fill="#ffffff" opacity="0.9">
+    <path d="M132 170l7 18 18 7-18 7-7 18-7-18-18-7 18-7z"/>
+    <path d="M646 130l5 13 13 5-13 5-5 13-5-13-13-5 13-5z"/>
+    <path d="M680 560l8 20 20 8-20 8-8 20-8-20-20-8 20-8z"/>
+    <path d="M170 620l4 11 11 4-11 4-4 11-4-11-11-4 11-4z"/>
+  </g>
+
+  <circle cx="400" cy="400" r="270" fill="none" stroke="url(#ring)" stroke-width="10" filter="url(#glow)"/>
+  <circle cx="400" cy="332" r="105" fill="#050712" stroke="#00D4FF" stroke-width="8"/>
+  <path d="M218 640c22-116 92-178 182-178s160 62 182 178" fill="#050712" stroke="#9B30FF" stroke-width="9"/>
+  <path d="M310 335h180" stroke="#39FF14" stroke-width="9" stroke-linecap="round" opacity="0.92"/>
+  <circle cx="346" cy="334" r="12" fill="#39FF14" filter="url(#glow)"/>
+  <circle cx="454" cy="334" r="12" fill="#39FF14" filter="url(#glow)"/>
+  <path d="M274 522c72 46 180 46 252 0" fill="none" stroke="#00D4FF" stroke-width="6" stroke-linecap="round" opacity="0.78"/>
+  <text x="400" y="720" fill="#F4F7FF" font-family="Orbitron, Arial, sans-serif" font-size="44" font-weight="700" text-anchor="middle">SHARVI</text>
+</svg>
