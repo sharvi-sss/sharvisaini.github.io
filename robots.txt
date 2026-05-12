@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sharvi-saini.github.io/portfolio/sitemap.xml
